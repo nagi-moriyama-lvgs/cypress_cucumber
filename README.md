@@ -103,6 +103,15 @@ Then("タイトルにGoogleが表示されている。", () => {
 });
 ```
 
+`feature`ファイルとテストファイルの`Step`(Given,When,Thenの総称)は必ず1:1で存在する必要がある。
+| テスト成功時 | テスト欠損時 |
+| --- | --- |
+|<img width="414" alt="スクリーンショット 2022-11-14 17 46 45" src="https://user-images.githubusercontent.com/85160208/201618260-802f18e5-8df9-4019-ab38-47de8f1ffa55.png">| <img width="500" alt="スクリーンショット 2022-11-14 17 59 04" src="https://user-images.githubusercontent.com/85160208/201618389-e332dd54-33cc-4c9f-a3eb-88f89ca37cc0.png"> |
+
+
+featureとテストが1:1でない場合はテストがfailする。
+
+
 <br><br>
 
 ## 備考
