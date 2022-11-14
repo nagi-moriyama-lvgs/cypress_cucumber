@@ -1,23 +1,7 @@
 import { When, Then, Before } from "@badeball/cypress-cucumber-preprocessor";
 
-/**
- * Googleの検索ページにアクセス
- */
-Before(() => {
-  cy.log("before");
-});
+// サーベイデリバリーを配信する。
 
-When("Google.comにアクセス", () => {
-  cy.visit("https://www.google.com");
-});
-
-Then("タイトルにGoogleが表示されている。", () => {
-  cy.contains("Google");
-});
-
-/**
- * サーベイデリバリーを配信する。
- */
 When("サーベイデリバリーの配信日時に配信対象者に配信メールを送信する。", () => {
   cy.visit("https://www.google.com");
 });
