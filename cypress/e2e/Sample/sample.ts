@@ -5,9 +5,5 @@ When("I visit google.com", () => {
 });
 
 Then("タイトルにGoogleが表示されている。", () => {
-  cy.get("input").should(
-    "have.attr",
-    "placeholder",
-    "Search the web without being tracked"
-  );
+  cy.contains("Google");
 });
