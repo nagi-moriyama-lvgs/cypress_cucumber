@@ -1,10 +1,19 @@
-import { When, Then, Before } from "@badeball/cypress-cucumber-preprocessor";
+import {
+  When,
+  Then,
+  Before,
+  Given,
+} from "@badeball/cypress-cucumber-preprocessor";
 
 /**
  * Googleの検索ページにアクセス
  */
 Before(() => {
   cy.log("before");
+});
+
+Given("Googleのサービスが稼働していること", () => {
+  cy.log("google稼働中");
 });
 
 When("Google.comにアクセス", () => {

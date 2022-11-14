@@ -1,6 +1,7 @@
 Feature: サンプルテストケース
 
   Scenario: Googleの検索ページにアクセス
+    Given Googleのサービスが稼働していること
     When Google.comにアクセス
     Then タイトルにGoogleが表示されている。
 
