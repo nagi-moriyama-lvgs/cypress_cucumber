@@ -11,5 +11,8 @@
     "url": "git@github:nagi-moriyama-lvgs/cypress_cucumber.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^11.0.1"
+  }
 }
