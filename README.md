@@ -77,6 +77,32 @@ Feature: サンプルテストケース
        * 実施ステータスが「未実施」のサーベイデリバリーを 1 つ作成する。
 ```
 
+
+### xxx.ts
+
+Cypressのテストファイルの代わりになるもの。
+
+`describe`や`it`の代わりに`Given`,`When`,`Then`で記載
+
+```ts
+import { When, Then, Before } from "@badeball/cypress-cucumber-preprocessor";
+
+/**
+ * Googleの検索ページにアクセス
+ */
+Before(() => {
+  cy.log("before");
+});
+
+When("Google.comにアクセス", () => {
+  cy.visit("https://www.google.com");
+});
+
+Then("タイトルにGoogleが表示されている。", () => {
+  cy.contains("Google");
+});
+```
+
 <br><br>
 
 ## 備考
