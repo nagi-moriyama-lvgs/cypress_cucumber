@@ -1,7 +1,7 @@
 import { When, Then } from "@badeball/cypress-cucumber-preprocessor";
 
 describe("サンプル", () => {
-  When("I visit google.com", () => {
+  When("Google.comにアクセス", () => {
     cy.visit("https://www.google.com");
   });
 
